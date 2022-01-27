@@ -1,0 +1,7 @@
+{
+  "name": "hostname-redirector",
+  "script": "./dist/index.js",
+  "exec_mode": "fork",
+  "autorestart": true,
+  "restart_delay": 0
+}

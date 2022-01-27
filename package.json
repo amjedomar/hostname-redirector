@@ -1,0 +1,33 @@
+{
+  "name": "hostname-redirector",
+  "version": "1.0.0",
+  "description": "A Node.js server to redirect a public hostname to another including the full URL and the port",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "atco -w --exec \"node ./dist/index.js\"",
+    "build": "atco",
+    "start": "node ./dist/index.js",
+    "start:pm2": "pm2-runtime start ./runtime.config.json",
+    "format": "prettier --write ./src/**/*"
+  },
+  "engines": {
+    "node": ">= 16.13.2",
+    "yarn": ">= 1.22.15"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.10",
+    "atco": "^1.0.13",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "dotenv": "^14.3.0",
+    "express": "^4.17.2",
+    "pm2": "^5.1.2"
+  }
+}

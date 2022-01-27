@@ -1,0 +1,16 @@
+# Editors / IDEs
+/.idea/
+/.vscode/
+
+# Dependencies
+/node_modules/
+
+# Distributable
+/dist/
+
+# Env
+/.env
+
+# Yarn Logs
+/yarn-debug.log*
+/yarn-error.log*
